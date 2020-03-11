@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/ders1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fulid kenarlik" >
+    <p>ilk javascript sayfam</p>
+        <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">
+       tarih için tıkla </button>
+            <p id="demo"></p>
+    </div>
+
+    <div class="container-fuid mt-3 kenarlik">
+        <p id="demo1">deneme</p>
+        <button type="button" onclick="document.getElementById('demo1').innerHTML='selam dostum'">
+    buraya tıkla </button>
+    </div>
+    <!-- js bir resmin kaynağını değiştirebilir getElementById modulu .src kaynağından aldığı veriyi resim idli veri kısmına aktarır-->
+    <div class="container-fluid mt-3 kenarlik">
+        <p>buta tıklayınca lamba yanacak</p>
+        <button type="button" onclick="document.getElementById('resim').src='img/lambasonuk.gif'">lambayı söndür</button>
+        <img id="resim" src="image/lambasonuk.gif">
+        <button type="button" onclick="document.getElementById('resim').src='img/lambayanik.gif'">lambayı Yak</button>
+    </div>
+
+    <div class="container-fluid mt-3 kenarlik">
+            <!-- js bir tasarımının yapısnı da değiştirebilir değiştirebilir getElementById modulu .style kaynağından aldığı veriyi style idli veri kısmına aktarır-->
+        <p id="style">bu yazının boyutu değiştirilecek</p>
+        <button type="button" onclick="document.getElementById('style').style.fontSize='35px'">Değiştirmek için tıkla</button>
+    </div>
+    <div class="container-fluid mt-3 kenarlik">
+        <!-- js bir tasarımının yapısnı da değiştirebilir değiştirebilir getElementById modulu .style kaynağından aldığı veriyi style idli veri kısmına aktarır-->
+        <p id="yazi">Bu yazı kaybolacaktır</p>
+        <button type="button" onclick="document.getElementById('yazi').style.display='none'"> Kaybolması için tıkla</button>
+        <button type="button" onclick="document.getElementById('yazi1').innerHTML='Yazı geri geldi'">geri getir</button>
+        <p id="yazi1"></p>
+
+    </div>
+    <div class="container-fluid kenarlik mt-3">
+        <div class="row">
+            <div class="col-12">
+                <p>js gizli tutulan bir bir elementi ortaya çıkarabilir</p>
+                <p id="hide" style="display: none; color: blue;">buyazı gizli tutulmuştu</p>
+                <button type="button" onclick="document.getElementById('hide').style.display='block'">Tıkla</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
